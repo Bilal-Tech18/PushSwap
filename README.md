@@ -1,7 +1,7 @@
 # Push Swap
 Push Swap is a C program that sorts lists of numbers using the **Binary Radix Sort** algorithm. The goal of this project is to efficiently sort numbers provided as command-line arguments and demonstrate algorithmic optimization.
 
-![radix_sort](https://github.com/user-attachments/assets/9d47e978-e6db-47cc-9ec9-1e384f652dc3)
+![binary_sort](https://github.com/user-attachments/assets/45c09b7a-5727-4f0e-90e4-9ec3befd33af)
 
 ## Author
 
