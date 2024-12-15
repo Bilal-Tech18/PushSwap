@@ -1,5 +1,5 @@
 # Push Swap
-Push Swap is a C program that sorts lists of numbers using the **Radix Sort** algorithm. The goal of this project is to efficiently sort numbers provided as command-line arguments and demonstrate algorithmic optimization.
+Push Swap is a C program that sorts lists of numbers using the **Binary Radix Sort** algorithm. The goal of this project is to efficiently sort numbers provided as command-line arguments and demonstrate algorithmic optimization.
 
 ![radix_sort](https://github.com/user-attachments/assets/9d47e978-e6db-47cc-9ec9-1e384f652dc3)
 
@@ -9,10 +9,9 @@ Push Swap is a C program that sorts lists of numbers using the **Radix Sort** al
 
 ## Features
 
-- **Radix Sort** implementation for sorting integers.
-- Efficient handling of sorting operations with minimal complexity.
+- **Binary Radix Sort** implementation for sorting integers by their binary representation.
+- Efficient handling of sorting operations using bitwise manipulations.
 - Modular design for clarity and maintainability.
-- Compatible with custom lists provided via command-line arguments.
 
 ## Requirements
 
@@ -46,15 +45,17 @@ Error Handling
 How It Works
 
     The program reads the list of integers provided as command-line arguments.
-    It implements the Radix Sort algorithm to sort the numbers efficiently.
+    It implements the **Binary Radix Sort** algorithm to sort the numbers by focusing on individual bits.
     The sorted list is displayed as the output.
 
-## Radix Sort Overview
 
-Radix Sort is a non-comparative sorting algorithm that organizes numbers by processing individual digits. It performs sorting in O(nk) time complexity, where:
+## Binary Radix Sort Overview
 
-    n is the number of integers.
-    k is the maximum number of digits in the integers.
+Binary Radix Sort organizes numbers by processing individual bits instead of digits. It sorts the numbers based on their binary representation, starting with the least significant bit (LSB) and moving to the most significant bit (MSB). This method is efficient for integers and runs in **O(n * k)** time complexity, where:
+    
+    - **n** is the number of integers.
+    - **k** is the number of bits in the largest number.
+
 
 ## Project Structure
 
@@ -66,12 +67,13 @@ The project is organized as follows:
 
 ## Unit Tests
 
-The project includes unit tests to validate the sorting functionality.
+The project includes unit tests to validate sorting functionality with Binary Radix Sort, ensuring correctness for edge cases like duplicate values, already sorted lists, and mixed positive/negative integers.
+
 Running Tests
 
-    Compile the test suite:
+Compile the test suite:
 
-make tests_run
+    make tests_run
 
 Execute the tests:
 
